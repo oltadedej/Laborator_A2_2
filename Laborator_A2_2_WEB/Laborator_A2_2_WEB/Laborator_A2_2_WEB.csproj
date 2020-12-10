@@ -75,10 +75,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Olta\Ushtrim2.html" />
-    <Content Include="Olta\Ushtrim3.html" />
-    <Content Include="Olta\Ushtrim1.html" />
-    <Content Include="Olta\Ushtrim4.html" />
+    <Content Include="Laborator1\Ushtrim2.html" />
+    <Content Include="Laborator1\Ushtrim3.html" />
+    <Content Include="Laborator1\Ushtrim1.html" />
+    <Content Include="Laborator1\Ushtrim4.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
