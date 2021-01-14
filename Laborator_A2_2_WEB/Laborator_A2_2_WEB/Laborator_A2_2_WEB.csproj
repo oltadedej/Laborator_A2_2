@@ -76,6 +76,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Img\download.jpg" />
+    <Content Include="Img\download_new.png" />
     <Content Include="Laborator1\Ushtrim2.html" />
     <Content Include="Laborator1\Ushtrim3.html" />
     <Content Include="Laborator1\Ushtrim1.html" />
@@ -87,6 +88,8 @@
     <Content Include="Laborator2\Ushtrimi7.aspx" />
     <Content Include="Laborator2\Ushtrimi8.aspx" />
     <Content Include="Laborator2\VisibilitetiILabelave.aspx" />
+    <Content Include="Laborator3\DSH_Change_Img.aspx" />
+    <Content Include="Laborator3\DSH_ZevendesoFjalen.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -240,6 +243,13 @@
     </Compile>
     <Compile Include="Laborator2\VisibilitetiILabelave.aspx.designer.cs">
       <DependentUpon>VisibilitetiILabelave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator3\DSH_Change_Img.aspx.cs">
+      <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator3\DSH_Change_Img.aspx.designer.cs">
+      <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
