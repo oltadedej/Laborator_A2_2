@@ -100,6 +100,7 @@
     <Content Include="Laborator2\Ushtrimi7.aspx" />
     <Content Include="Laborator2\Ushtrimi8.aspx" />
     <Content Include="Laborator2\VisibilitetiILabelave.aspx" />
+    <Content Include="Laborator3\Afshisho.aspx" />
     <Content Include="Laborator3\DSH_Change_Img.aspx" />
     <Content Include="Laborator3\DSH_ZevendesoFjalen.html" />
     <Content Include="Laborator3\MenaxhoRecordePhoneBook.aspx" />
@@ -257,6 +258,13 @@
     <Compile Include="Laborator2\VisibilitetiILabelave.aspx.designer.cs">
       <DependentUpon>VisibilitetiILabelave.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Laborator3\Afshisho.aspx.cs">
+      <DependentUpon>Afshisho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator3\Afshisho.aspx.designer.cs">
+      <DependentUpon>Afshisho.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Laborator3\Domain\Configuration.cs" />
     <Compile Include="Laborator3\Domain\PhoneBook.cs" />
     <Compile Include="Laborator3\DSH_Change_Img.aspx.cs">
@@ -292,10 +300,10 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Folder Include="Ornela Elezi\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

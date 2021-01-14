@@ -90,5 +90,14 @@ namespace Laborator_A2_2_WEB.Laborator3
 
 
         }
+
+        protected void transferobtn_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(ddl.SelectedValue))
+            {
+
+                Response.Redirect("Afshisho.aspx?IdPhoneBook="+ddl.SelectedValue.Trim());
+            }
+        }
     }
 }

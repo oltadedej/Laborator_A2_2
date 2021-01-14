@@ -54,22 +54,21 @@
             <br />
             <br />
 
+            <%-- Butoni per fshirjen e objektit nga list --%>
             <asp:Panel ID="pnlfshi" runat="server">
 
                    <asp:Button ID="fshiBtn" Text="Fshi record"  OnClick="fshiBtn_Click"  runat="server" />
 
-           
+            </asp:Panel>
+            <br />
+            <br />
+            <%-- Butoni per transferimin e te dhenave --%>
+            <asp:Panel ID="pnlTransfero"  runat="server">
 
-
+                   <asp:Button ID="transferobtn" Text="Transfero te dhena"  OnClick="transferobtn_Click"  runat="server" />
 
 
             </asp:Panel>
-
-
-
-
-
-
         </div>
     </form>
 </body>
