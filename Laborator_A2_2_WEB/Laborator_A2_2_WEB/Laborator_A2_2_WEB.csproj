@@ -75,6 +75,18 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim2.html">
+      <Link>Olta\Ushtrim2.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim3.html">
+      <Link>Olta\Ushtrim3.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim1.html">
+      <Link>Olta\Ushtrim1.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim4.html">
+      <Link>Olta\Ushtrim4.html</Link>
+    </Content>
     <Content Include="Img\download.jpg" />
     <Content Include="Img\download_new.png" />
     <Content Include="Laborator1\Ushtrim2.html" />
@@ -281,6 +293,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Ornela Elezi\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
