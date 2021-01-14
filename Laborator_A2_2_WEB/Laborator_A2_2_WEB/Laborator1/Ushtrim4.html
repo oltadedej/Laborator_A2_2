@@ -9,7 +9,7 @@
         function KonvertoNeOreEMinuta (){
              debugger;
              var nr = document.getElementById('nr').value;
-            var ore = Math.floor(nr / 60);
+            var ore = Math.floor(nr / 60);//ky funksion merr numrin e plote, e rrumbullakos
             var min = (nr % 60);
             var lbl = document.getElementById('afisho');
             lbl.innerHTML = "Numri i konvertuar ne ore e minuta eshte ore:" + ore +  " minuta:" + min;
@@ -17,7 +17,7 @@
                  lbl.style.color = "red";
              }
              else if (ore >=10 && ore<20) {
-                 lbl.style.color = "yello";
+                 lbl.style.color = "yellow";
             }
              else lbl.style.color = "green";
 

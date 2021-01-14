@@ -83,7 +83,7 @@
             function AfishoPunonjes() {
                 debugger;
                 var selectList = document.getElementById('punonjesit');
-                if (selectList.value !== null || selectList.value !== "" || selectList.value !== "undefined") {
+                if ((newName.value !== null && newName.value !== "" && newName.value !== "undefined") && (newSurname.value !== null && newSurname.value !== "" && newSurname.value !== "undefined")) {
 
                     var lbEmri = document.getElementById('afishimEmri');
                     var lbMbiemri = document.getElementById('afishimMbiemri');
@@ -107,7 +107,7 @@
                 let newName = document.getElementById('newName');
                 let newSurname = document.getElementById('newSurname');
 
-                if ((newName.value !== null || newName.value !== "" || newName.value !== "undefined") && (newSurname.value !== null || newSurname.value !== "" || newSurname.value !== "undefined")) {
+                if ((newName.value !== null && newName.value !== "" && newName.value !== "undefined") && (newSurname.value !== null && newSurname.value !== "" && newSurname.value !== "undefined")) {
 
                     var numberOfEmployees = select.options.length //"4" // 4
                     var opt = document.createElement('option');

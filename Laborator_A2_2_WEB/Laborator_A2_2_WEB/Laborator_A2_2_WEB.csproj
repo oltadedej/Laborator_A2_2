@@ -87,6 +87,21 @@
     <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim4.html">
       <Link>Olta\Ushtrim4.html</Link>
     </Content>
+    <Content Include="Img\download.jpg" />
+    <Content Include="Img\download_new.png" />
+    <Content Include="Laborator1\Ushtrim2.html" />
+    <Content Include="Laborator1\Ushtrim3.html" />
+    <Content Include="Laborator1\Ushtrim1.html" />
+    <Content Include="Laborator1\Ushtrim4.html" />
+    <Content Include="Laborator1\UshtrimiDshArray.html" />
+    <Content Include="Laborator2\DdlNgjyrat.aspx" />
+    <Content Include="Laborator2\Ushtrimi2.aspx" />
+    <Content Include="Laborator2\Ushtrimi1.aspx" />
+    <Content Include="Laborator2\Ushtrimi7.aspx" />
+    <Content Include="Laborator2\Ushtrimi8.aspx" />
+    <Content Include="Laborator2\VisibilitetiILabelave.aspx" />
+    <Content Include="Laborator3\DSH_Change_Img.aspx" />
+    <Content Include="Laborator3\DSH_ZevendesoFjalen.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -199,6 +214,55 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Laborator2\DdlNgjyrat.aspx.cs">
+      <DependentUpon>DdlNgjyrat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\DdlNgjyrat.aspx.designer.cs">
+      <DependentUpon>DdlNgjyrat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi2.aspx.cs">
+      <DependentUpon>Ushtrimi2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi2.aspx.designer.cs">
+      <DependentUpon>Ushtrimi2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi1.aspx.cs">
+      <DependentUpon>Ushtrimi1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi1.aspx.designer.cs">
+      <DependentUpon>Ushtrimi1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi7.aspx.cs">
+      <DependentUpon>Ushtrimi7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi7.aspx.designer.cs">
+      <DependentUpon>Ushtrimi7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi8.aspx.cs">
+      <DependentUpon>Ushtrimi8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\Ushtrimi8.aspx.designer.cs">
+      <DependentUpon>Ushtrimi8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator2\VisibilitetiILabelave.aspx.cs">
+      <DependentUpon>VisibilitetiILabelave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator2\VisibilitetiILabelave.aspx.designer.cs">
+      <DependentUpon>VisibilitetiILabelave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator3\DSH_Change_Img.aspx.cs">
+      <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator3\DSH_Change_Img.aspx.designer.cs">
+      <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +282,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Folder Include="Ornela Elezi\" />
   </ItemGroup>
