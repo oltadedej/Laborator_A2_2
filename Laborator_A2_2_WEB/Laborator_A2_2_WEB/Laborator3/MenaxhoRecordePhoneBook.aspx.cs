@@ -58,10 +58,35 @@ namespace Laborator_A2_2_WEB.Laborator3
             con.phoneBooks.Add(item);
             ddl.DataSource = con.phoneBooks;
             ddl.DataTextField = "PhoneBookPersonName";
-              ddl.DataValueField = "PhoneBookId";
+             ddl.DataValueField = "PhoneBookId";
             ddl.DataBind(); 
+        }
 
+        protected void fshiBtn_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(ddl.SelectedValue.Trim()))
+            {
+                int IdToDelete = 0;
+                IdToDelete = Convert.ToInt32(ddl.SelectedValue.Trim());
+                Configuration con = new Configuration();
+                bool eksiston = con.phoneBooks.Any(i => i.PhoneBookId == IdToDelete);
+                if (eksiston)
+                {
+                    //fshi elementin  nga listaa
 
+                    PhoneBook itemToDelete = con.phoneBooks.Where(i => i.PhoneBookId == IdToDelete).FirstOrDefault();
+                    if (itemToDelete != null)
+                    {
+                        con.phoneBooks.Remove(itemToDelete);
+                        ddl.DataSource = con.phoneBooks;
+                        ddl.DataTextField = "PhoneBookPersonName";
+                        ddl.DataValueField = "PhoneBookId";
+                        ddl.DataBind();
+                    }
+
+                }
+
+            }
 
 
         }

@@ -50,8 +50,24 @@
                 <br />
                 <asp:Button ID="shto" Text="Shto record" ValidationGroup="shtoRecord"  OnClick="shto_Click"  runat="server" />
 
+            </asp:Panel>
+            <br />
+            <br />
+
+            <asp:Panel ID="pnlfshi" runat="server">
+
+                   <asp:Button ID="fshiBtn" Text="Fshi record"  OnClick="fshiBtn_Click"  runat="server" />
+
+           
+
+
+
 
             </asp:Panel>
+
+
+
+
 
 
         </div>
