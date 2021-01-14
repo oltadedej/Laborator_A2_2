@@ -75,10 +75,18 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Olta\Ushtrim2.html" />
-    <Content Include="Olta\Ushtrim3.html" />
-    <Content Include="Olta\Ushtrim1.html" />
-    <Content Include="Olta\Ushtrim4.html" />
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim2.html">
+      <Link>Olta\Ushtrim2.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim3.html">
+      <Link>Olta\Ushtrim3.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim1.html">
+      <Link>Olta\Ushtrim1.html</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Viti III\Teknologji dotNet\Laboratore\A2.2 1\Ushtrim4.html">
+      <Link>Olta\Ushtrim4.html</Link>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
