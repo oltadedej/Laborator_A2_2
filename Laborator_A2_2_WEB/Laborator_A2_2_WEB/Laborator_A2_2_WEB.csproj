@@ -90,6 +90,7 @@
     <Content Include="Laborator2\VisibilitetiILabelave.aspx" />
     <Content Include="Laborator3\DSH_Change_Img.aspx" />
     <Content Include="Laborator3\DSH_ZevendesoFjalen.html" />
+    <Content Include="Laborator3\MenaxhoRecordePhoneBook.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -244,12 +245,21 @@
     <Compile Include="Laborator2\VisibilitetiILabelave.aspx.designer.cs">
       <DependentUpon>VisibilitetiILabelave.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Laborator3\Domain\Configuration.cs" />
+    <Compile Include="Laborator3\Domain\PhoneBook.cs" />
     <Compile Include="Laborator3\DSH_Change_Img.aspx.cs">
       <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Laborator3\DSH_Change_Img.aspx.designer.cs">
       <DependentUpon>DSH_Change_Img.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator3\MenaxhoRecordePhoneBook.aspx.cs">
+      <DependentUpon>MenaxhoRecordePhoneBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator3\MenaxhoRecordePhoneBook.aspx.designer.cs">
+      <DependentUpon>MenaxhoRecordePhoneBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
