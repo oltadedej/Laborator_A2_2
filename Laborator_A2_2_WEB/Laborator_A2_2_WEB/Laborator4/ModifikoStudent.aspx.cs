@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -15,7 +16,7 @@ namespace Laborator_A2_2_WEB.Laborator4
             {
                 int std = Convert.ToInt32(Request.QueryString["idStudent"]);
 
-                using(University_LaboratorEntities dbcontext = new University_LaboratorEntities())
+                using (University_LaboratorEntities dbcontext = new University_LaboratorEntities())
                 {
                     Student stdudent_ = dbcontext.Students.ToList().Where(i => i.StudentId == std).FirstOrDefault();
                     txtName.Text = stdudent_.Emer;
@@ -54,8 +55,12 @@ namespace Laborator_A2_2_WEB.Laborator4
 
                     if (!String.IsNullOrEmpty(txtEnrollmentDate.Text))
                     {
-                        dbcontext.Students.ToList()[itemIndexToModify].EnrollmentDate = Convert.ToDateTime(txtEnrollmentDate.Text);
-                           
+                        // dbcontext.Students.ToList()[itemIndexToModify].EnrollmentDate = Convert.ToDateTime(txtEnrollmentDate.Text);
+
+                        //zgjidhja e problematikes me daten ne formatin dd/MM/yyyy qe marrim nga webi, dmth konvertimi i tekstit ne date
+
+                        dbcontext.Students.ToList()[itemIndexToModify].EnrollmentDate = DateTime.ParseExact(txtEnrollmentDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+
                     }
 
                     //ruan ndryshimnet ne baze te dhenash
