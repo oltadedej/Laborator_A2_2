@@ -45,7 +45,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,6 +77,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\University_Laborator.mdf" />
+    <Content Include="App_Data\University_Laborator_log.ldf">
+      <DependentUpon>University_Laborator.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -104,6 +116,10 @@
     <Content Include="Laborator3\DSH_Change_Img.aspx" />
     <Content Include="Laborator3\DSH_ZevendesoFjalen.html" />
     <Content Include="Laborator3\MenaxhoRecordePhoneBook.aspx" />
+    <Content Include="Laborator4\AfishoStudent.aspx" />
+    <Content Include="Laborator4\DSH_Perditeso_Record.aspx" />
+    <Content Include="Laborator4\ModifikoStudent.aspx" />
+    <Content Include="Laborator4\Students.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -203,6 +219,16 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="UniversityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UniversityModel.Context.cs</LastGenOutput>
+      <DependentUpon>UniversityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="UniversityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UniversityModel.edmx</DependentUpon>
+      <LastGenOutput>UniversityModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -216,6 +242,12 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Course.cs">
+      <DependentUpon>UniversityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment.cs">
+      <DependentUpon>UniversityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Laborator2\DdlNgjyrat.aspx.cs">
       <DependentUpon>DdlNgjyrat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,12 +313,65 @@
     <Compile Include="Laborator3\MenaxhoRecordePhoneBook.aspx.designer.cs">
       <DependentUpon>MenaxhoRecordePhoneBook.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Laborator4\AfishoStudent.aspx.cs">
+      <DependentUpon>AfishoStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator4\AfishoStudent.aspx.designer.cs">
+      <DependentUpon>AfishoStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator4\DSH_Perditeso_Record.aspx.cs">
+      <DependentUpon>DSH_Perditeso_Record.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator4\DSH_Perditeso_Record.aspx.designer.cs">
+      <DependentUpon>DSH_Perditeso_Record.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator4\ModifikoStudent.aspx.cs">
+      <DependentUpon>ModifikoStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator4\ModifikoStudent.aspx.designer.cs">
+      <DependentUpon>ModifikoStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laborator4\Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laborator4\Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs">
+      <DependentUpon>UniversityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UniversityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniversityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UniversityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniversityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UniversityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniversityModel.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <EntityDeploy Include="UniversityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UniversityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="UniversityModel.edmx.diagram">
+      <DependentUpon>UniversityModel.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -299,6 +384,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ornela Elezi\" />
