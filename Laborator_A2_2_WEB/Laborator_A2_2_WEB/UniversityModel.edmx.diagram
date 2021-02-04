@@ -7,9 +7,14 @@
       <Diagram DiagramId="ddc4f171f85e489e852e077bd783dd71" Name="Diagram1">
         <EntityTypeShape EntityType="University_LaboratorModel.Course" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="University_LaboratorModel.Enrollment" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="University_LaboratorModel.Student" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="University_LaboratorModel.Student" Width="1.5" PointX="0.875" PointY="3.25" IsExpanded="true" />
         <AssociationConnector Association="University_LaboratorModel.FK_Enrollment_Course_CourseId" ManuallyRouted="false" />
         <AssociationConnector Association="University_LaboratorModel.FK_Enrollment_Student_StudentId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="University_LaboratorModel.Authorization" Width="1.5" PointX="3.375" PointY="5.125" />
+        <EntityTypeShape EntityType="University_LaboratorModel.User" Width="1.5" PointX="3.375" PointY="7.75" />
+        <EntityTypeShape EntityType="University_LaboratorModel.User_Authorization" Width="1.5" PointX="5.625" PointY="4.875" />
+        <AssociationConnector Association="University_LaboratorModel.FK_User_Authorization_Authorizations" />
+        <AssociationConnector Association="University_LaboratorModel.FK_User_Authorization_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

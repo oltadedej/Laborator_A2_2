@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Laborator_A2_2_WEB.Laborator5;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,17 +14,23 @@ namespace Laborator_A2_2_WEB.Laborator4
         {
             if (!Page.IsPostBack)
             {
-                // krijimi i lidhjes me bazen e te dhenave
-                using (University_LaboratorEntities dbcontext = new University_LaboratorEntities())
+                if (Tokens.LoggedUser != null)
                 {
 
-                    gdvstudents.DataSource = dbcontext.Students.ToList();
-                    gdvstudents.DataBind();
+                    // krijimi i lidhjes me bazen e te dhenave
+                    using (University_LaboratorEntities dbcontext = new University_LaboratorEntities())
+                    {
+
+                        gdvstudents.DataSource = dbcontext.Students.ToList();
+                        gdvstudents.DataBind();
 
 
+                    }
                 }
-
-
+                else
+                {
+                    Response.Redirect("~/Laborator5/LoginUser.aspx");
+                }
 
             }
 
@@ -97,6 +104,38 @@ namespace Laborator_A2_2_WEB.Laborator4
 
 
             }
+
+        }
+
+        public bool Visibility_Edit_Button()
+        {
+            if (Tokens.IsAdmin)
+            {
+                return true;
+
+            }
+
+            else return false;
+
+        }
+
+
+        public bool CanViewStudentDetail()
+        {
+            if (Tokens.UserAuthorization.Any(i => i.Equals("DetailStudent")))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        protected void LogOut_Click(object sender, EventArgs e)
+        {
+            //nxjerr perdoruesin nga sistemi
+
+            Session["User"] = null;
+            Response.Redirect("~/Laborator5/LoginUser.aspx");
+
 
 
         }

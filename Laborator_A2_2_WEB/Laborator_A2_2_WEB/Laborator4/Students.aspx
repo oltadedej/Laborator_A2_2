@@ -29,7 +29,7 @@
                      <asp:TemplateField HeaderText="Aksionet">
                         <ItemTemplate>
                             <asp:Button ID="Btmodifiko" runat="server" Text="Modifiko Student"  CommandName="ModifikoStudent"
-                                 OnCommand="gdvButtons_Command"
+                                 OnCommand="gdvButtons_Command"  Visible='<%#Visibility_Edit_Button()%>'
                                  CommandArgument='<%# ((Laborator_A2_2_WEB.Student)Container.DataItem).StudentId %>'
                                 />
                              <asp:Button ID="btnDetail" runat="server" Text="Detai Student"  CommandName="DetailStudent"
@@ -48,6 +48,14 @@
 
 
             </asp:GridView>
+
+
+            <asp:Button runat="server" ID="LogOut" Text="LogOut" OnClick="LogOut_Click" />
+
+
+
+
+
         </div>
     </form>
 </body>

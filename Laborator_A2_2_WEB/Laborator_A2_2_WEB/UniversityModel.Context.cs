@@ -28,5 +28,8 @@ namespace Laborator_A2_2_WEB
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Enrollment> Enrollments { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Authorization> Authorizations { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User_Authorization> User_Authorization { get; set; }
     }
 }
