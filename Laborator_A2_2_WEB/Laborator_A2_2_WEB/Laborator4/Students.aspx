@@ -40,20 +40,12 @@
                         </ItemTemplate>
                     </asp:TemplateField>
 
-
-
-
                     <asp:BoundField  DataField="EnrollmentDate" HeaderText="Data e regjistrimit"  DataFormatString="{0:dd/MM/yyyy}" />
                 </Columns>
 
-
             </asp:GridView>
 
-
             <asp:Button runat="server" ID="LogOut" Text="LogOut" OnClick="LogOut_Click" />
-
-
-
 
 
         </div>

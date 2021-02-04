@@ -8,6 +8,9 @@ namespace Laborator_A2_2_WEB.Laborator5
     public static class Tokens
     {
 
+        //useri i loguar ne sistem
+        //merret sessioni dhe konvertohet ne nje objekt te tipit user
+        // nuk ruaj vec usernamen ruaj komplet objektin user ne session
         public static User LoggedUser
         {
             get
@@ -15,7 +18,11 @@ namespace Laborator_A2_2_WEB.Laborator5
                 if (HttpContext.Current.Session["User"] != null)
                     return (User)HttpContext.Current.Session["User"];
 
-                else return null;
+                else
+                {
+                    return null;
+
+                };
             }
 
             set
@@ -63,6 +70,10 @@ namespace Laborator_A2_2_WEB.Laborator5
                 return (bool)HttpContext.Current.Session["IsAdmin"];
             }
         }
+
+
+
+        //rasti kur keni ndarjen e adminit dhe readerit me role
 
         //public static bool IsAdminWithRoles
         //{

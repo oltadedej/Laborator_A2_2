@@ -134,6 +134,8 @@ namespace Laborator_A2_2_WEB.Laborator4
             //nxjerr perdoruesin nga sistemi
 
             Session["User"] = null;
+            Session["IsAdmin"] = null;
+            HttpContext.Current.Session["UserAuthorization"] = null;
             Response.Redirect("~/Laborator5/LoginUser.aspx");
 
 

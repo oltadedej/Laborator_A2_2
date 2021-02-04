@@ -21,7 +21,8 @@
 
                <fieldset>
                     <legend>Student Courses</legend>
-                    <asp:GridView ID="gdvCourse" EmptyDataText="Ky student nuk eshte regjistruar ne asnje kurs" DataKeyNames="CourseId"
+                    <asp:GridView ID="gdvCourse" EmptyDataText="Ky student nuk eshte regjistruar ne asnje kurs" 
+                        DataKeyNames="CourseId"
                         DataMember="Course"
                         AutoGenerateColumns="false"
                         runat="server">
