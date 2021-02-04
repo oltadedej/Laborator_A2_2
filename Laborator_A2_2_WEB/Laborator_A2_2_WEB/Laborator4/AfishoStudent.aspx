@@ -19,6 +19,21 @@
             <asp:Label runat="server" MaxLength="10" ID="lblEnrollmentDate"></asp:Label>
             <br />
 
+               <fieldset>
+                    <legend>Student Courses</legend>
+                    <asp:GridView ID="gdvCourse" EmptyDataText="Ky student nuk eshte regjistruar ne asnje kurs" DataKeyNames="CourseId"
+                        DataMember="Course"
+                        AutoGenerateColumns="false"
+                        runat="server">
+                        <Columns>
+                            <asp:BoundField DataField="CourseTitle" HeaderText="Titulli i kursit" />
+                            <asp:BoundField DataField="Credits" HeaderText="Kreditet e kursit" />
+                        </Columns>
+
+
+                    </asp:GridView>
+                </fieldset>
+
         </div>
     </form>
 </body>

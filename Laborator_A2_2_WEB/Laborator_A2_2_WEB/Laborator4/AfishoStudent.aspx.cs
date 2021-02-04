@@ -21,7 +21,15 @@ namespace Laborator_A2_2_WEB.Laborator4
                     lblSurname.Text = stdudent_.Mbiemer;
                     lblEnrollmentDate.Text = stdudent_.EnrollmentDate.ToString("dd/MM/yyyy");
 
+                    //fill with value course resuts
+                    var courses = from course in dbcontext.Courses
+                                  join enrollment in dbcontext.Enrollments on course.CourseId equals enrollment.CourseId
+                                  join student_ in dbcontext.Students on enrollment.StudentId equals student_.StudentId
+                                  where student_.StudentId == std
+                                  select course;
 
+                    gdvCourse.DataSource = courses.ToList<Course>();
+                    gdvCourse.DataBind();
 
                 }
             }
